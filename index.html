@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Agustín</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar(event)">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar(event)">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar(event)">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar(event)">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar(event)">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar(event)">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./img/foto.png" alt="">
+            </div>
+            <h1>Agustín Abel Sosa</h1>
+            <h2>Desarrollador FrontEnd</h2>
+            <div class="redes">
+                <a href="https://github.com/agustinsosa79" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/agustin-sosa-709a66233/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/agustin_sossaa/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Agustin Sosa </span> un joven de 18 años apasionado por el desarrollo front-end. Antes de
+                empezar al curso de CoderHouse, ya estaba explorando este mundo y desde entonces, mi deseo de aprender y
+                mejorar van en aumento. Creo que el diseño web es mucho más que código; es una forma de vivir, y trato
+                de agregarle mi toque a cada proyecto. Mi portafolio muestra una muestra de mi trabajo, y espero que lo
+                disfruten tanto como yo disfruté creándolo. Estoy entusiasmado por lo que el futuro me depara en este
+                emocionante rubro.</p>
+
+
+            <div class="fila">
+                <!-- datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            30-03-2005
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            221-676-9195
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            agustinsosaa81@gmail.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Guardia Nacional 2524
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Desarrollador FrontEnd</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>CODEAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="./png/CV-AGUSTÍN-ABEL-SOSA (1).pdf" download="CV-AGUSTÍN-ABEL-SOSA.pdf">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                </a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="col">
+                <div class="skills-container">
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <img class="icons" src="./img/js.png" alt="icono-javascript">
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <img class="icons"
+                            src="./img/icons8-react-a-javascript-library-for-building-user-interfaces-96.png"
+                            alt="icono-react">
+                    </div>
+                    <div class="skill">
+                        <span>Github</span>
+                        <img class="icons" src="./img/icons8-github-100.png" alt="icono-github">
+                    </div>
+                    <div class="skill">
+                        <span>Git</span>
+                        <img class="icons" src="./img/icons8-git-96.png" alt="icono-git">
+                    </div>
+                    <div class="skill">
+                        <span>Html</span>
+                        <img class="icons" src="./img/html.png" alt="icono-html">
+                    </div>
+                    <div class="skill">
+                        <span>Css</span>
+                        <img class="icons" src="./img/css-3.png" alt="icono-css">
+                    </div>
+                    <div class="skill">
+                        <span>Sass</span>
+                        <img class="icons" src="./img/icons8-hablar-con-descaro-a-96.png" alt="icono-sass">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>CoderHouse</h4>
+                        <span class="casa">Desarrollo FrontEnd</span>
+                        <span class="fecha">Desde el 16 de marzo hasta el 17 de octubre</span>
+                        <p>En el curso de desarrollo front-end, aprendí a utilizar HTML, CSS y JavaScript para crear
+                            sitios web atractivos y funcionales. También adquirí conocimientos en diseño web y
+                            optimización para diferentes dispositivos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <a href="">Ir al certificado</a>
+                    </div>
+                    <div class="item izq">
+                        <h4>CoderHouse</h4>
+                        <span class="casa">Desarrollo web</span>
+                        <span class="fecha">Desde el 16 de marzo hasta el 23 de mayo</span>
+                        <p>En el curso de desarrollo web de CoderHouse, adquirí conocimientos en HTML y CSS para la
+                            creación de sitios web. Aprendí a hacer que mis diseños fueran responsive, optimizados para
+                            diferentes dispositivos. También me familiaricé con herramientas como Git y GitHub para el
+                            control de versiones, lo que facilita la colaboración en proyectos. Además, exploré
+                            conceptos avanzados como Flexbox y Grid para diseñar interfaces más flexibles y eficientes
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <a href="https://api.coderhouse.com/ch-www-api/certifications/648b99f5dafb4c0002ff308b/print?lang=es"
+                            target="_blank">Ir al certificado</a>
+                    </div>
+                    <div class="item izq">
+                        <h4>CoderHouse</h4>
+                        <span class="casa">JavaScript</span>
+                        <span class="fecha">Desde el 21 de junio hasta el 23 de agosto</span>
+                        <p>En el curso de JavaScript comprendi cómo trabajar con arrays y objetos para almacenar y
+                            manipular datos de manera eficiente. Aprendí a crear funciones para modular mi código y a
+                            utilizar ciclos condicionales para tomar decisiones lógicas. Además, aaprendi a manejar
+                            Document Object Model (DOM) para interactuar con la estructura de las páginas web y
+                            responder a eventos</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <a href="https://api.coderhouse.com/ch-www-api/certifications/650960dff39ea2d98f6621b3/print?lang=es"
+                            target="_blank">Ir al certificado</a>
+                    </div>
+                    <div class="item izq">
+                        <h4>CoderHouse</h4>
+                        <span class="casa">React</span>
+                        <span class="fecha">Desde el 29 de agosto hasta el 17 de octubre</span>
+                        <p>En el curso de React aprendí a construir componentes reutilizables, aprovechando los props
+                            para transmitir datos entre ellos. Aprendi sobre enrutamiento y la navegación para crear una
+                            experiencia de usuario fluida. Tambien aprendi a usar el manejo de promesas y el consumo de
+                            APIs para obtener y mostrar datos. Los hooks y custom-hooks me permitieron gestionar el
+                            estado y la lógica de manera eficiente. También trabajé con el contexto para compartir datos
+                            en toda la aplicación y utilicé Firebase para la autenticación y el almacenamiento de datos
+                            en la nube.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                        <a href="" target="_blank">Ir al certificado</a>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>En busca de mi primera experiencia laboral en el rubro IT</h4>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO-->
+    <section id="portfolio" class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <a href="https://over-proyecto.netlify.app/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/proyecto-1.png" alt="proyecto-1-javascript">
+                    <div class="overlay">
+                        <h3>Proyecto Ecommerce</h3>
+                        <p>Javascript</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://timely-shortbread-093a18.netlify.app/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/proyecto-2.png " alt="proyecto-2-javascript">
+                    <div class="overlay">
+                        <h3>Proyecto Ecommerce</h3>
+                        <p>React</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://radiant-kheer-800e7a.netlify.app/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/proyecto-3.png " alt="proyecto-3-react">
+                    <div class="overlay">
+                        <h3>Proyecto Ecommerce</h3>
+                        <p>React</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://agustinsosa79.github.io/Tribute/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/steve-jobs-proyect.png" alt="proyecto-4-html-css">
+                    <div class="overlay">
+                        <h3>Proyecto Tributo</h3>
+                        <p>HTML-CSS</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://agustinsosa79.github.io/Label/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/label-proyect.png" alt="proyecto-5-html-css">
+                    <div class="overlay">
+                        <h3>Proyecto Label</h3>
+                        <p>HTML-CSS</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://agustinsosa79.github.io/Reconocimiento-de-voz/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/reconocimiento-voz.png" alt="proyecto-6-javascript">
+                    <div class="overlay">
+                        <h3>Proyecto Voz</h3>
+                        <p>Javascript</p>
+                    </div>
+                </div>
+            </a>
+            <a href="https://agustinsosa79.github.io/questionnaire/" target="_blank">
+                <div class="proyecto">
+                    <img src="./img/cuestionario-foto.png" alt="proyecto-7-javascript">
+                    <div class="overlay">
+                        <h3>Proyecto Cuestionario</h3>
+                        <p>HTML-CSS</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <form action="https://formsubmit.co/agustinsosaa81@gmail.com" method="POST">
+                        <input name="name" type="name" placeholder="Tu nombre" required>
+                        <input name="phone" type="phone" placeholder="Numero de telefono" required>
+                        <input name="email" type="email" placeholder="Direccion de correo" required>
+                        <input name="subject" type="subject" placeholder="Tema" required>
+                        <textarea name="coments" id="" cols="30" rows="10" required></textarea>
+                        <button type="submit">
+                            Enviar Mensaje<i class="fa-regular fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                        <!--<input name="_next" type="hidden" value="">-->
+                    </form>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="./img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Guardia Nacional 2524
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                contactame: 221-676-9195
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: agustinsosaa81@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://github.com/agustinsosa79" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/agustin-sosa-709a66233/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/agustin_sossaa/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
